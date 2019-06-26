@@ -13,3 +13,4 @@ dist/
 eb-*.log
 /env
 .vscode
+.spyproject
