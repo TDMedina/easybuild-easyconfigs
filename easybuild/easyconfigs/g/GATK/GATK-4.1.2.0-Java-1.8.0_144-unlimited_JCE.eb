@@ -1,10 +1,10 @@
-easyblock = 'Tarball'
+easyblock = "Tarball"
 
-name = 'GATK'
-version = '4.1.2.0'
-versionsuffix = '-Java-1.8.0_144-unlimited_JCE'
+name = "GATK"
+version = "4.1.2.0"
+versionsuffix = "-Java-1.8.0_144-unlimited_JCE"
 
-homepage = 'http://www.broadinstitute.org/gatk/'
+homepage = "http://www.broadinstitute.org/gatk/"
 description = """The Genome Analysis Toolkit or GATK is a software package
 developed at the Broad Institute to analyse next-generation resequencing
 data. The toolkit offers a wide variety of tools, with a primary focus on
@@ -13,22 +13,22 @@ assurance. Its robust architecture, powerful processing engine and
 high-performance computing features make it capable of taking on projects
 of any size."""
 
-toolchain = {'name': 'dummy', 'version': ''}
-source_urls = ['https://github.com/broadinstitute/gatk/releases/download/%(version)s/']
-sources = ['gatk-%(version)s.zip']
-checksums = ['ffc5f9b3d4b35772ee5dac3060b59dc657f30e830745160671d84d732c30dc65']
+toolchain = {"name": "dummy", "version": ""}
+source_urls = ["https://github.com/broadinstitute/gatk/releases/download/%(version)s/"]
+sources = ["gatk-%(version)s.zip"]
+checksums = ["ffc5f9b3d4b35772ee5dac3060b59dc657f30e830745160671d84d732c30dc65"]
 
 dependencies = [
-        ('Java', '1.8.0_144', '-unlimited_JCE')
+        ("Java", "1.8.0_144", "-unlimited_JCE")
         ]
 
-modextrapaths = {'PATH': ''}
+modextrapaths = {"PATH": ""}
 
 sanity_check_paths = {
-        'files': ['gatk'],
-        'dirs': []
+        "files": ["gatk"],
+        "dirs": []
         }
 
 sanity_check_commands = ["gatk --help"]
 
-moduleclass = 'bio'
+moduleclass = "bio"
